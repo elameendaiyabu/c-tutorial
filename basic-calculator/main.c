@@ -1,42 +1,41 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 
-int main(int argc, char *argv[])
-{
-	int firstNum;
-	int secondNum;
-	char operation[1];
-	int result;
-	bool isRunning = true;
+int main(int argc, char *argv[]) {
+  int firstNum;
+  int secondNum;
+  char operation[1];
+  int result;
+  bool isRunning = true;
 
-	while (isRunning) {
-	
-		printf("Enter first number : ");
-		scanf("%d", &firstNum);
+  while (isRunning) {
 
-		printf("Enter second number : ");
-		scanf("%d", &secondNum);
+    printf("Enter first number : ");
+    scanf("%d", &firstNum);
 
-		printf("choose operation (+, -, *, /, or q to quit) : ");
-		scanf("%s", operation);
+    printf("Enter second number : ");
+    scanf("%d", &secondNum);
 
-		if (strcmp(operation, "+") == 0){
-			result = firstNum + secondNum;
-		}else if (strcmp(operation, "-") == 0) {
-			result = firstNum - secondNum;
-		}else if (strcmp(operation, "*") == 0) {
-			result = firstNum * secondNum;
-		}else if (strcmp(operation, "/") == 0) {
-			result = firstNum / secondNum;
-		}else if (strcmp(operation, "q")== 0) {
-			break;
-		} else {
-			printf("Invalid character");
-		}
+    printf("choose operation (+, -, *, /, or q to quit) : ");
+    scanf("%s", operation);
 
-		printf("%d\n",result);
-	}
+    if (strcmp(operation, "+") == 0) {
+      result = firstNum + secondNum;
+    } else if (strcmp(operation, "-") == 0) {
+      result = firstNum - secondNum;
+    } else if (strcmp(operation, "*") == 0) {
+      result = firstNum * secondNum;
+    } else if (strcmp(operation, "/") == 0) {
+      result = firstNum / secondNum;
+    } else if (strcmp(operation, "q") == 0) {
+      break;
+    } else {
+      printf("Invalid character");
+    }
 
-	return 0;
+    printf("%d\n", result);
+  }
+
+  return 0;
 }
