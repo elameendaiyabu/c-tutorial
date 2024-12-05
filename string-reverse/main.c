@@ -13,6 +13,10 @@ void reverse(char word[]) {
 int main(int argc, char *argv[]) {
   // string as input and reverse it then compare with original
 
-  reverse("hello if"); // should output tab
+  char input[100];
+  printf("enter a string to reverse: ");
+  scanf("%s", input);
+
+  reverse(input); // should output tab
   return 0;
 }
