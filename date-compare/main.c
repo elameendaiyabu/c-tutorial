@@ -12,27 +12,21 @@ struct Dates {
 
 void findOlder(struct Day date1, struct Day date2) {
   if (date1.year > date2.year) {
-    printf("The second date is older => %d/%d/%d\n", date2.day, date2.month,
-           date2.year);
+    printf("The second date is older => %d/%d/%d\n", date2.day, date2.month, date2.year);
   } else if (date1.year < date2.year) {
-    printf("The first date is older => %d/%d/%d\n", date1.day, date1.month,
-           date1.year);
+    printf("The first date is older => %d/%d/%d\n", date1.day, date1.month, date1.year);
   } else {
 
     if (date1.month > date2.month) {
-      printf("The second date is older => %d/%d/%d\n", date2.day, date2.month,
-             date2.year);
+      printf("The second date is older => %d/%d/%d\n", date2.day, date2.month, date2.year);
     } else if (date1.month < date2.month) {
-      printf("The first date is older => %d/%d/%d\n", date1.day, date1.month,
-             date1.year);
+      printf("The first date is older => %d/%d/%d\n", date1.day, date1.month, date1.year);
     } else {
 
       if (date1.day > date2.day) {
-        printf("The second date is older => %d/%d/%d\n", date2.day, date2.month,
-               date2.year);
+        printf("The second date is older => %d/%d/%d\n", date2.day, date2.month, date2.year);
       } else {
-        printf("The first date is older => %d/%d/%d\n", date1.day, date1.month,
-               date1.year);
+        printf("The first date is older => %d/%d/%d\n", date1.day, date1.month, date1.year);
       }
     }
   }
